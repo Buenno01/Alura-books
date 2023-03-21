@@ -1,0 +1,39 @@
+.newsletter{
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.newsletter__titulo, .newsletter__texto{
+    background: var(--degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.newsletter__titulo{
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.newsletter__texto{
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.newsletter__email{
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 1.5em;
+    width: 90%;
+    color: var(--azul);
+}
+
+.newsletter__email::placeholder
+{
+    padding-left: 2em;
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/Email.svg") no-repeat;
+}

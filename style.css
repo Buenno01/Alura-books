@@ -2,8 +2,11 @@
 @import url(styles/banner.css);
 @import url(styles/carrossel.css);
 @import url(styles/topicos.css);
+@import url(styles/newsletter.css);
+@import url(styles/footer.css);
 
 :root{
+    --fundo-rodape: #F9F9F9;
     --cor-de-fundo: #ebecee;
     --azul: #002F52;
     --cor-azul-escuro: ;
