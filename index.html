@@ -70,14 +70,75 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
+
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <img src="img/Angular.svg" class="descricao__imagem">
+            </div>
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
+                    <li class="botoes__item"> <img src="img/Compras.svg" alt="adicionar ao carrinho de compras"></li>
+                </ul>
+                <a class="botoes__ancora" href="#">Saiba mais</a>
+            </div>
+        </div>
+
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">mais vendidos</h2>
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apacha kafka e spring boot"></div>
+              <div class="swiper-slide"><img src="img/Gestão.svg" alt="Livro sobre gestão de produtos"></div>
+              <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Livro construindo APIs rest com node J S"></div>
+              <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre lógica de programação com Portugol"></div>
+              <div class="swiper-slide"><img src="img/Arquitetura.svg" alt="Livro sobre arquitetura de software distribuído, boas práticas para um mundo de microsserviços"></div>
+              <div class="swiper-slide"><img src="img/Tuning.svg" alt="Livro sobre tuning de sql, melhore a performance de suas aplicações Oracle"></div>
+              ...
+            </div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <img class="descricao__titulo__score" src="img/Star.svg" alt="avaliação 5 estrelas">
+                    <h3 class="descricao__titulo">Autora do Mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <img alt="foto da escritora Juliana Agarikov" src="img/Escritora.svg" class="descricao__imagem">
+            </div>
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
+                    <li class="botoes__item"> <img src="img/Compras.svg" alt="adicionar ao carrinho de compras"></li>
+                </ul>
+                <a class="botoes__ancora" href="#">Saiba mais</a>
+            </div>
+        </div>
+
+    </section>
+
+
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', 
         {
             spaceBetween: 10,
-            slidesPerView: 3,
+            slidesPerView: 2,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',}
