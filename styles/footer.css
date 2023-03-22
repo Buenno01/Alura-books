@@ -39,3 +39,10 @@ hr{
         justify-content: space-evenly;
     }
 }
+
+@media screen and (min-width:1728px) {
+    .rodape__colunas{
+        border-left: 1px solid var(--cinza-titulo-footer);
+        padding-left: 1em;
+    }
+}

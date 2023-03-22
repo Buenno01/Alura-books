@@ -35,7 +35,8 @@
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item{
+.lista-menu__titulo, 
+.lista-menu__item{
     padding: 1em;
     background-color: var(--branco);
 }
@@ -53,7 +54,7 @@
     text-transform: uppercase;
 }
 
-.container__botao{
+.container__botao, .container__texto{
     display: none;
 }
 
@@ -112,5 +113,24 @@
 
     .opcoes__botao{
         display: none;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .container__texto{
+        display: block;
+        color: var(--preto);
+        font-size: 1.25rem;
+    }
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .opcoes{
+        margin-right: auto;
+    }
+    .cabecalho{
+        padding: 0 4em;
     }
 }
