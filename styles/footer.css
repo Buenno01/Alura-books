@@ -6,3 +6,36 @@ hr{
     background-color: var(--fundo-rodape);
     padding: 1em 0 1.5em 1em;
 }
+
+@media screen and (min-width:1024px) {
+    .rodape__titulo{
+        font-size: 1.5rem;
+        margin-right: 6.5rem;
+    }
+    .rodape__colunas{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+    .coluna__titulo{
+        color: var(--cinza-titulo-footer);
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+    .coluna__item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        text-decoration: none;
+    }
+    .coluna__empresa{
+        color: var(--cinza-texto-footer);
+        margin-left: 0.5rem;
+        font-size: 0.875;
+    }
+    .rodape{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

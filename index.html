@@ -44,7 +44,27 @@
         </div>
 
         <ul class="opcoes">
-            <li class="opcoes__item">Categorias</li>
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+                <label for="opcoes-menu">
+                    <li class="opcoes__item">Categorias</li>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Programação</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Front-end</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Infraestrutura</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Business</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Design & UX</a>
+                    </li>
+                </ul>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
         </ul>
@@ -171,8 +191,10 @@
     </section>
 
     <section class="newsletter">
-        <h2 class="newsletter__titulo">Fique por dentro das novidades!</h2>
-        <p class="newsletter__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="newsletter__descricao">
+            <h2 class="newsletter__titulo">Fique por dentro das novidades!</h2>
+            <p class="newsletter__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="newsletter__email">
     </section>
 
@@ -180,6 +202,80 @@
 
     <footer class="rodape">
         <h2 class="rodape__titulo">Grupo Alura</h2>
+        <div class="rodape__colunas">
+            <h3 class="coluna__titulo">educação</h3>
+            <a href="#" class="coluna__item">
+                <img src="img/Caelum.svg">
+                <p class="coluna__empresa">Caelum</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/CasaDoCodigo.svg">
+                <p class="coluna__empresa">Casa do Código</p>
+            </a>
+        </div>
+        <div class="rodape__colunas">
+            <h3 class="coluna__titulo">educação online</h3>
+            <a href="#" class="coluna__item">
+                <img src="img/Alura.svg">
+                <p class="coluna__empresa">Alura</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/AluraEmpresas.svg">
+                <p class="coluna__empresa">Alura Para Empresas</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/AluraLATAM.svg">
+                <p class="coluna__empresa">Alura LATAM</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/AluraStart.svg">
+                <p class="coluna__empresa">Alura Start</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/MusicDot.svg">
+                <p class="coluna__empresa">MusicDot</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/AluraLingua.svg">
+                <p class="coluna__empresa">Alura Língua</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/PM3.svg">
+                <p class="coluna__empresa">PM3</p>
+            </a>
+        </div>
+        <div class="rodape__colunas">
+            <h3 class="coluna__titulo">comunidade</h3>
+            <a href="#" class="coluna__item">
+                <img src="img/HipstersTech.svg">
+                <p class="coluna__empresa">Hipsters ponto Tech</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/ScubaDev.svg">
+                <p class="coluna__empresa">Scuba Dev</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/LayersTech.svg">
+                <p class="coluna__empresa">Layers ponto Tech</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/LikeABoss.svg">
+                <p class="coluna__empresa">Like a Boss</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/CarreiraSemFronteira.svg">
+                <p class="coluna__empresa">Carreira sem Fronteira</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/HipstersJobs.svg">
+                <p class="coluna__empresa">Hipsters ponto Jobs</p>
+            </a>
+            <a href="#" class="coluna__item">
+                <img src="img/GUJ.svg">
+                <p class="coluna__empresa">GUJ</p>
+            </a>
+        </div>
+
     </footer>
 
 
@@ -188,7 +284,7 @@
         const swiper = new Swiper('.swiper', 
         {
             spaceBetween: 10,
-            slidesPerView: 2,
+            slidesPerView: 3,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',}

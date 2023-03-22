@@ -16,6 +16,8 @@
     --degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins";
     --fonte-secundaria: "Josefin sans";
+    --cinza-titulo-footer: #858585;
+    --cinza-texto-footer: #474646;
 }
 
 body{

@@ -37,3 +37,22 @@
     color: var(--azul);
     background: url("../img/Email.svg") no-repeat;
 }
+
+@media screen and (min-width: 1024px) {
+    .newsletter{
+        display: flex; 
+        justify-content: center;
+        align-items: center;     
+    }
+    .newsletter__descricao{
+        width: 30%;
+        margin: 1.875rem 3rem 0 3rem;
+    }
+    .newsletter__titulo{
+        font-size: 1.5rem;
+    }
+
+    .newsletter__email{
+        width: 30%;
+    }
+}
